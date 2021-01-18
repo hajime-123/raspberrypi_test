@@ -1,1 +1,2 @@
 # raspberrypi_test
+ラズパイ設定とgithubの簡単な使い方
