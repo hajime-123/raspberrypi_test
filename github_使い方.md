@@ -1,7 +1,7 @@
 ﻿###githubの使い方
 まずはrepository作成  
 <img width="500"alt="qiita-square"  src="./github画像/1.png">  
-![Test Image 1](/github画像/1.png)
+![Test Image 1](/github画像/1.PNG)
 以下の設定にする  
 <img width="500"alt="qiita-square"  src="./github画像/2.png">  
 gitの設定
