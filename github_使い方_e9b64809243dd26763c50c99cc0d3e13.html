@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01//EN' 'http://www.w3.org/TR/html4/strict.dtd'>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<link rel='stylesheet' href='C:\Users\18530\AppData\Roaming\MarkDownSharpEditor\css\github.css' type='text/css' />
+<style type='text/css'>
+	 ._mk {background-color:#FFFFC8}
+</style>
+<title>github_使い方.md</title>
+</head>
+<body>
+<h3>githubの使い方</h3>
+<p>まずはrepository作成<br />
+<img width="500"alt="qiita-square"  src="./github画像/1.png"><br />
+以下の設定にする<br />
+<img width="500"alt="qiita-square"  src="./github画像/2.png"><br />
+gitの設定
+ディレクトリの移動  
+</p>
+<pre><code>gitbash上で作業する
+cd 保存先の指定 
+git clone  
+git add -A
+git commit -m &quot;raspi_test&quot;  
+git status  
+commit間違えたとき
+git reset HEAD
+OKなら
+git pull
+</code></pre>
+
+<pre><code>netwoek:  
+    ethernets:  
+        eth0:  
+        dhcp4: true  
+&lt;!-- edit --&gt;       optional: true
+    version: 2  
+    #ここから下を追加  
+    wifis:  
+        wlan0:  
+            optional: true
+            dhcp4: true
+            access-points:
+                &quot;ssid&quot;:
+                    password: &quot;パスワード&quot;
+</code></pre>
+
+<p>エラー確認  
+</p>
+<pre><code>sudo netplan --debug try
+sudo netplan --debug generate
+</code></pre>
+
+<p>反映  
+</p>
+<pre><code>sudo netplan --debug apply
+</code></pre>
+
+<p>うまくいかない時</p>
+<pre><code>sudo systemctl start wpa_supplicant
+shutdown now
+sudo 
+</code></pre>
+
+<h3>デスクトップ導入</h3>
+<pre><code>sudo apt update
+sudo apt upgrade
+sudo apt install net-tools
+sudo apt install ubuntu-mate-desktop
+sudo apt-get install xrdp
+</code></pre>
+
+<p>Ubuntuのバージョン確認</p>
+<pre><code>cat /etc/os-release
+</code></pre>
+
+<p>GPIOの設定</p>
+<pre><code>sudo apt install wiringpi
+sudo gpio readall
+</code></pre>
+
+<h3>ROSパッケージのインストール</h3>
+<p>sudo apt install ros-noetic-cv-camera<br />
+sudo apt install ros-noetic-cv-bridge<br />
+sudo apt install ffmpeg  
+</p>
+<p>cd ~/catkin_ws/src/<br />
+git clone https://github.com/GT-RAIL/async_web_server_cpp.git<br />
+git clone https://github.com/RobotWebTools/web_video_server.git<br />
+cd ~/catkin_ws<br />
+catkin_make   
+</p>
+</body>
+</html>
