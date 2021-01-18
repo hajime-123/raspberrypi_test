@@ -1,4 +1,4 @@
-﻿###githubの使い方
+###githubの使い方
 まずはrepository作成  
 <img width="500"alt="qiita-square"  src="./github画像/1.png">  
 ![Test Image 1](/github画像/1.PNG)
