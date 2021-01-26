@@ -27,3 +27,11 @@ idとパスワードを求められる
 sudo apt install git
 git clone https://github.com/hajime-123/raspberrypi_test.git 
 ~~~  
+コンフリクトが起きた場合
+~~~  
+git pull#リモートのリポジトリを持ってくる
+git diff#違いを確認する
+git add -A
+git commit -m "test"  
+git push
+~~~  
