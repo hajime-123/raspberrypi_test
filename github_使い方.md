@@ -1,6 +1,8 @@
 ﻿###githubの使い方
 まずはrepository作成  
+
 ![Test Image 1](github画像/1.PNG)  
+
 以下の設定にする  
 ![Test Image 1](github画像/2.PNG)  
 ローカルレポジトリから　リモートリポジトリへ反映  
